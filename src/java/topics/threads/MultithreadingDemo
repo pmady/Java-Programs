@@ -1,0 +1,16 @@
+package com.java.topics.threads;
+
+public class MultithreadingDemo extends Thread {
+	
+	public void run(){
+		System.out.println("My first thread");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MultithreadingDemo obj = new MultithreadingDemo();
+		obj.start();
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.java.topics.inheritance;
+
+import java.util.Scanner;
+
+public class AbstractClassDemo extends AbstractDemo {
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AbstractClassDemo abdemo= new AbstractClassDemo();
+		Scanner Sc= new Scanner(System.in);
+		String As=Sc.nextLine();
+		StringBuffer buf= new StringBuffer("Pavan");
+		
+		boolean Comp=abdemo.had(As,buf);
+		System.out.println(Comp);
+//		abdemo.display();
+//		abdemo.show();
+//		abdemo.view();
+
+	}
+
+	@Override
+	void show() {
+		// TODO Auto-generated method stub
+		System.out.println("Inside Abstract class Demo");
+		
+	}
+
+}
